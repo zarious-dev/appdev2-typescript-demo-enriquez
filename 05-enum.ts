@@ -7,8 +7,10 @@
         Teacher = 'Teacher',
         // Student,
         Student = 'Student',
+        Admin = 'Admin',
     }
 
     // let userRole: Role = 0;
-    let userRole: Role = Role.SuperAdmin;
-})
+    let userRole: Role = Role.Student;
+    console.log(userRole)
+})()
