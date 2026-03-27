@@ -47,3 +47,10 @@ Covers arrays with union types, object typing with nested properties, and the `R
 
 ## 05-enum.ts
 Introduces enums, specifically string enums, and shows how to assign `enum` values properly.
+
+## 06-alternative-to-enum.ts
+## 07-custom-type-role.ts
+## 08-functions.ts
+## 09-special-types.ts
+## 10-form.html and 10-type-narrowing.ts
+## 11-optional.ts
