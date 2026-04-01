@@ -4,9 +4,8 @@
     function add(a: number, b: number): number { // you can omit the function type since typescript can infers it
         return a + b
     }
-
-    add(5, 10)
-    // add("5", 10)
+    console.log(add(5, 10)) //15
+    //console.log(add("5", 10)) //510 // this is error. type "5" is not assignable to type "number"
 
     // Special Type `void` - return nothing
     // Function doesn't return a meaningful value, but it does finish
@@ -14,11 +13,11 @@
         console.log(message)
     }
 
-    log("Hello, World!")
+    log("Hello, Ebriwan!")
 
     // Another Special Type `never`
     // Function never finishes normally (throws error, infinite loop)
-    function logAndThrow(errorMessage: string) {
+    function logAndThrow(errorMessage: string): never {
         console.log(errorMessage)
         throw new Error(errorMessage)
     }
@@ -30,7 +29,7 @@
     // () => void - function type
     function performJob(cb: (m: string) => void) {  // you can also use cb: Function but () => void is the best practice
         // ...
-        cb('Job Done!')
+        cb('Job Well Done!')
     }
 
     let logMsg = (msg: string): void => {
@@ -47,16 +46,13 @@
     }
 
     let user: User = {
-        name: "Elmer",
-        age: 39,
-        // greet: function() {
-        //     return this.name
-        // }
+        name: "Cella",
+        age: 22,
         greet() {
-            console.log(`Hello, ${this.name}`)
+            console.log(`Hello, ${this.name}!`)
             return this.name
         }
     }
 
     user.greet()
-})
+})()
